@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Nature from './components/Nature';
 import Animal from './components/Animal';
+import Footer from './components/Footer';
 import natureData from "./natureData"
 import animalData from './animalData';
 
@@ -34,6 +35,7 @@ function App() {
       <NavBar />
       {natureImages}
       {animalImages}
+      <Footer />
     </div>
   );
 }
