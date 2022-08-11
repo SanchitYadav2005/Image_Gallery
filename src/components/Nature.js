@@ -1,14 +1,12 @@
 import React from "react";
-import natureData from "../natureData";
 
 
-function Nature(){
-    
-    const[imgUrl,setImgUrl] = React.useState("");
-    
-    
+function Nature(props){
+     
     return(
-        <h1>working</h1>
+        <div>
+            <img src={props.img} alt="nature"/>
+        </div>
     )
 }
 

@@ -1,8 +1,6 @@
-export default [
-    {
-        "page": 1,
-        "per_page": 15,
-        "photos": [
+const data = [
+    
+        
             {
                 "id": 15286,
                 "width": 2500,
@@ -91,6 +89,8 @@ export default [
                 "liked": false,
                 "alt": "Mountain Covered Snow Under Star"
             }
-        ]
-    }
+        
+    
 ]
+
+export default data;
