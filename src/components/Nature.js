@@ -4,7 +4,7 @@ import React from "react";
 function Nature(props){
      
     return(
-        <div>
+        <div className="nature-container">
             <img src={props.img} alt={props.alternativeText}/>
         </div>
     )
