@@ -5,7 +5,7 @@ function Nature(props){
      
     return(
         <div>
-            <img src={props.img} alt="nature"/>
+            <img src={props.img} alt={props.alternativeText}/>
         </div>
     )
 }
