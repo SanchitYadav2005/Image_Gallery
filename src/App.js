@@ -2,16 +2,28 @@ import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import Nature from './components/Nature';
+import Animal from './components/Animal';
 import natureData from "./natureData"
+import animalData from './animalData';
 
 function App() {
   // this will return a map of array that will return nature iamges.
-  const images = natureData.map(url => {
+  const natureImages = natureData.map(natureUrl => {
     return(
       <Nature 
-        key = {url.id}
-        img = {url.src.original}
-        alternativeText = {url.alt}
+        key = {natureUrl.id}
+        natureImg = {natureUrl.src.original}
+        alternativeText = {natureUrl.alt}
+      />
+    )
+  });
+
+  const animalImages = animalData.map(animalUrl => {
+    return(
+      <Animal 
+        key = {animalUrl.id}
+        animalImg = {animalUrl.src.original}
+        alternativeText = {animalUrl.src.original}
       />
     )
   })
@@ -20,7 +32,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {images}
+      {natureImages}
+      {animalImages}
     </div>
   );
 }
